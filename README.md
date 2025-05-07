@@ -37,21 +37,30 @@ a) Each VM is allocated 100 GB block storage
 b) Snapshot storage consumes 20% extra on average
 
 **SOLUTIONS:**
-Problem 1: Encryption Time Calculation 
+
+Problem 1: Encryption Time Calculation  
+
 A company uses AES-256 encryption to secure its data before uploading it to the cloud. 
+
 It takes 0.05 seconds to encrypt 1 MB of data. 
+
 Q: How long will it take to encrypt 2 TB of data before upload? 
+
 AES-256 encryption takes 0.05 seconds per 1 MB 
 Step 1: Convert 2 TB to MB 
 1 TB=1024 GB 
 1 GB=1024 MB 
 ⇒2 TB=2×1024×1024=2,097,152  
+
 Step 2: Calculate encryption time 
 Encryption time=2,097,152 MB×0.05 sec/MB=104,857.6 seconds  
+
 Step 3: Convert seconds to hours 
 104,857.6÷3600≈29.13 hours  
+
 Final Answer: 
 It will take approximately 104,857.6 seconds, or about 29.13 hours, to encrypt 2 TB of data. 
+
 Problem 2:CPU Utilization Efficiency 
 A VM is allocated 8 vCPUs, but only uses 5.5 vCPUs on average. 
 Q: What is the CPU utilization efficiency? 
